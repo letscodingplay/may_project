@@ -10,8 +10,9 @@ from openai import OpenAI
 load_dotenv()
 
 # API 키 가져오기
-HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+HF_TOKEN = os.getenv("HUGGINGFACE_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+print(f"OPENAI_API_KEY:{OPENAI_API_KEY}")
 
 client = OpenAI(api_key = OPENAI_API_KEY)
 
